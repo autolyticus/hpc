@@ -17,7 +17,7 @@
     printf("\n");                                                              \
   }
 
-#define SIZE 200
+#define SIZE 1500
 int main(int argc, char *argv[]) {
   long double a[SIZE][SIZE];
   long double b[SIZE][SIZE];
@@ -39,9 +39,7 @@ int main(int argc, char *argv[]) {
         c[i][j] = a[i][j] + b[i][j];
   }
   double end = omp_get_wtime();
-  printf("%lf\n", (end));
-  printf("%lf\n", (start));
   /* printMat(c, SIZE); */
-  printf("%lf", (end - start));
+  printf("%lf\n", (end - start));
   return 0;
 }
