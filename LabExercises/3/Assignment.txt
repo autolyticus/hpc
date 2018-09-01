@@ -1,0 +1,6 @@
+1. Read the values from 3 text files into 3 matrices each of size 384 X 512
+2. Apply mean filter on each matrix where each matrix represents an image and write the results into text file
+3. Do this with and without using sections(both in openmp)
+4. The main difference is - when you use sections, computations will be done on all matrices parallely(3 matrices are parallelized) otherwise computations will be done on 3 matrices sequentially(Here parallelism is separate from matrix to matrix)
+5. Execute the codes for different number of threads(1, 2, 4, 6, 8, 12, 16, 20, 24, 28, 32), draw the graphs for observed values and check the performance variations between two codes. 
+6. I've attached sample file that demonstrates sections usage in openmp

@@ -1,0 +1,16 @@
+#pragma omp parallel sections
+{
+   #pragma omp section
+   {
+      /* Executes in thread 1 */
+   } 
+   #pragma omp section
+   {
+      /* Executes in thread 2 */
+   } 
+   #pragma omp section
+   {
+      /* Executes in thread 3 */
+   } 
+   /* ... */
+}
